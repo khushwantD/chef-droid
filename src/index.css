@@ -290,7 +290,6 @@ body {
 
   .nav-items.active{
     left: 0;
-    height: 100vh;
   }
 
   .nav-items li{
@@ -316,6 +315,10 @@ body {
     width: 90%;
     margin: 2rem;
     padding: 1rem;
+  }
+
+  .footer.active{
+    display: none;
   }
 }
 

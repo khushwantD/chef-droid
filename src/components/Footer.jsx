@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { Context } from "../App";
 import {
   RiFacebookCircleLine,
   RiTwitterLine,
@@ -6,8 +8,11 @@ import {
 } from "react-icons/ri";
 
 function Footer() {
+
+  const { isActive } = useContext(Context);
+
   return (
-    <section className="footer">
+    <section className={`footer ${isActive ? "active" : ""}`}>
       <div className="icons">
         <a className="social-icon" href="#">
           <RiFacebookCircleLine />
@@ -27,4 +32,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
