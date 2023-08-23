@@ -9,10 +9,10 @@ function Main() {
   const { showChefBot, isActive } = useContext(Context);
 
   return (
-    <main className={`main ${isActive ? 'active' : ''}`}>
+    <section className={`main ${isActive ? 'active' : ''}`}>
       <Hero />
       {!showChefBot ? <FoodImg /> : <ChefBot />}
-    </main>
+    </section>
   );
 }
 

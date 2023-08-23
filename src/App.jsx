@@ -12,12 +12,18 @@ function App() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <Context.Provider value={{showChefBot, setShowChefBot, isActive, setIsActive}}>
-    <>
-      <Navbar />
-      <Main />
-      <Footer />
-    </>
+    <Context.Provider
+      value={{ showChefBot, setShowChefBot, isActive, setIsActive }}
+    >
+      <>
+        <section className="main-container">
+          <Navbar />
+          <Main />
+        </section>
+        <section className="footer-container">
+          <Footer />
+        </section>
+      </>
     </Context.Provider>
   );
 }

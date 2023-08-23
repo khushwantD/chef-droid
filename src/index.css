@@ -70,6 +70,10 @@ body {
 
 /* Main Content */
 
+.main-container{
+  min-height: calc(100vh - 3rem);
+}
+
 .main{
   margin-block: 5rem;
   display: flex;
@@ -240,6 +244,13 @@ body {
     transform: scale(1.2);
   }
   
+}
+
+.footer-container{
+  max-height: 3rem;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
 .footer{

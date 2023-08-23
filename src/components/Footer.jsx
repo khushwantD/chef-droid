@@ -12,7 +12,7 @@ function Footer() {
   const { isActive } = useContext(Context);
 
   return (
-    <section className={`footer ${isActive ? "active" : ""}`}>
+    <div className={`footer ${isActive ? "active" : ""}`}>
       <div className="icons">
         <a className="social-icon" href="#">
           <RiFacebookCircleLine />
@@ -28,7 +28,7 @@ function Footer() {
         </a>
       </div>
       <p>All rights reserved @ChefDroid</p>
-    </section>
+    </div>
   );
 }
 
